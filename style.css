@@ -165,7 +165,18 @@ h1 {
 /* Responsivo: Celular e Tablet */
 @media (max-width: 600px) {
     .container-produtos {
-        max-width: 90%;
+        grid-template-columns: 1fr;  /* 1 coluna por linha no celular */
+        max-width: 100%;
+        padding: 10px;
     }
+
+    .produto {
+        max-width: 100%;
+    }
+
+.produto {
+    max-width: 100%
+    }
+    
 }
 
