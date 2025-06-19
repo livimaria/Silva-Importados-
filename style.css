@@ -1,0 +1,171 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden; /* Bloqueia rolagem lateral */
+}
+
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8c634;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.topo-site {
+    background-color: #f8c634;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-horizontal {
+    width: 80%;        /* A logo vai ocupar 80% da largura da tela */
+    max-width: 400px;  /* Limita pra não ficar gigante em telas grandes */
+    height: auto;
+}
+
+.container-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas por linha */    
+    gap: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.produto {
+    min-width: 200px;
+    max-width: 250px;
+    flex: 0 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 10px auto;
+    max-width: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.produto h2 {
+    font-size: 1.1em;
+    margin-top: 10px 0 5px 0;
+}
+
+.produto p {
+    font-weight: green;
+    color: #333;
+}
+
+.botao {
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    background-color: #25D366;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #1ebe5d;
+}
+
+/* Estilo específico só para a página inicial */
+.botao-inicial {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: f#f8c634;  /* Fundo branco */
+    color: #000000;              /* Texto preto */
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #000000;  /* Borda preta pra destacar */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-inicial:hover {
+    background-color: #000000;  /* Ao passar o mouse: fundo preto */
+    color: #f8c634;              /* Texto branco no hover */
+}
+
+.pagina-inicial {
+    background-color: #b000f0; /* Amarelo da sua logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.container-inicial h2 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #fcfafa;
+}
+
+.container-inicial p {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.botao-inicial {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-inicial:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Responsivo: Celular e Tablet */
+@media (max-width: 600px) {
+    .produto {
+        max-width: 90%;
+    }
+}
+
