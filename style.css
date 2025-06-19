@@ -164,7 +164,7 @@ h1 {
 
 /* Responsivo: Celular e Tablet */
 @media (max-width: 600px) {
-    .produto {
+    .container-produtos {
         max-width: 90%;
     }
 }
